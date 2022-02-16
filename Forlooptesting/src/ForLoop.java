@@ -1,16 +1,23 @@
-
+import java.util.Scanner;
 public class ForLoop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+                Scanner scan = new Scanner(System.in);
+                 int height;
     
-		String s = "#";
+                 do {
+                   System.out.print("Height: ");
+                   height = scan.nextInt();
+                     }while(height < 0 || height > 8);
+    
+		   String s = "#";
 		
 		//row
-		for(int i = 0; i < 5; i++) { 
+		for(int i = 0; i < height; i++) { 
 			
 			//column
-			for(int j = i; j <5; j++) {
+			for(int j = i; j < height ; j++) {
 					
 					System.out.print(" ");
 							 
