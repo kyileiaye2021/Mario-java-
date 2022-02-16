@@ -9,7 +9,7 @@ public class ForLoop {
                  do {
                    System.out.print("Height: ");
                    height = scan.nextInt();
-                     }while(height < 0 || height > 8);
+                     }while(height < 0 || height > 8);//using && will make the boolean expression false which means that the do-while code will not be looped again and will output the for loop.
     
 		   String s = "#";
 		
